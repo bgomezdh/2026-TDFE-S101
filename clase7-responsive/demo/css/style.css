@@ -1,0 +1,110 @@
+/* Estilos laptop 1200px */
+body {
+  background-color: rgb(243, 242, 242);
+  margin: 0px;
+}
+
+#header {
+  background-color: rgb(211, 211, 211);
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cajaLogo img {
+  width: 200px;
+}
+
+.cajaBarraNav ul {
+  padding: 0px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Contenedor principal */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* Estilo base para los artículos */
+.articulo {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding: 20px;
+  height: 300px;
+  box-sizing: border-box; 
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 13px 10px 9px 4px #b4b4b4;
+
+}
+
+
+.articulo {
+  width: 20%;     /* 4 en fila (20% cada uno) */
+}
+
+
+/* ---  RESPONSIVE Desktops first--- */
+
+
+
+
+/* Tablet: 2 en fila (50% cada uno) */
+@media (max-width: 768px) {
+
+  body{
+    background-color: red;
+  }
+
+  .articulo{
+    width: 40%;
+  }
+  
+}
+
+
+
+
+
+
+
+/* Teléfono: 1 en fila (100% y vertical) */
+
+@media (max-width: 420px) {
+
+  body{
+    background-color: rgb(0, 255, 0);
+  }
+
+  .articulo{
+    width: 100%;
+  }
+
+  .cajaBarraNav ul{
+    flex-direction: column;
+  }
+
+  #header{
+    height: 200px;
+  }
+
+  .cajaFormulario{
+    display: none;
+  }
+  
+}

@@ -1,0 +1,64 @@
+.cajaPadre {
+    background-color: #173317;
+    min-height: 400px;
+    /* propiedades flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+   
+}
+
+.cajaHija {
+    background-color: rgb(153, 153, 54);
+    min-height: 165px;
+    width: 165px;
+    
+}
+
+/* los elementos hijos */
+.walter {
+    background-image: url('../img/walter.jpeg');
+    /* order */
+    order: 2;
+
+}
+
+.matraz {
+    background-image: url('../img/matraz.jpeg');
+    order: 3;
+}
+
+.mascara {
+    background-image: url('../img/mascara.jpeg');
+    order: 1;
+    align-self: stretch;
+}
+
+
+
+
+.sectionSuperior{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.sectionInferior{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imagen{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.texto{
+    width: 70%;
+}

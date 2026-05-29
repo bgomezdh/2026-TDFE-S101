@@ -1,0 +1,54 @@
+/* css para laptop */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(227, 205, 248);
+    color: rgb(48, 48, 48);
+}
+
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section{
+    width: 25%;
+    height: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css para tablets */
+@media(max-width: 768px) {
+    body{
+        background-color: rgb(27, 201, 91);
+    }
+
+    .section{
+        width: 50%;
+    }   
+}
+
+/* css para telefonos */
+@media(max-width: 420px) {
+    body{
+        background-color: #cd0000; 
+    }
+
+    .section{
+        width: 100%;
+    }  
+
+    .dos{
+        display: none;
+    }
+}
