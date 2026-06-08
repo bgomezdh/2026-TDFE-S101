@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>formularioProducto</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="home.html" class="navLink">Home</a>
+        <a href="formularioProducto.html" class="navLink">Crear</a>
+        <a href="detalleProducto.html" class="navLink">Ver info guardada</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="title">Formulario Producto</h1>
+
+      <form class="form" action="./detalleProducto.html" method="get">
+        <input
+          class="formInput nombreAuto"
+          type="text"
+          placeholder="Nombre del auto"
+          required
+        />
+        <input
+          class="formInput marcaAuto"
+          type="text"
+          placeholder="Marca del auto"
+          required
+        />
+        <input
+          class="formInput fotoAuto"
+          type="text"
+          placeholder="URL de la foto"
+          required
+        />
+        <button class="formBtn">Guardar Producto</button>
+      </form>
+    </main>
+
+    <script src="./js/formularioProducto.js"></script>
+  </body>
+</html>
